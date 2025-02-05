@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: helm-guestbook
+    path: lab1/example_app
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: HEAD
