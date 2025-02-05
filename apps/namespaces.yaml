@@ -11,10 +11,3 @@ metadata:
   name: lab2
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: lab3
-  annotations:
-    argocd.argoproj.io/sync-wave: "-1"

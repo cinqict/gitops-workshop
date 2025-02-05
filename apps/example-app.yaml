@@ -7,10 +7,10 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: guestbook
+    namespace: lab1
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: helm-guestbook
+    path: lab1/example_app
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: HEAD
