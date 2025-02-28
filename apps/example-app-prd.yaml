@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: gitops-app-dev
+  name: example-app-prd
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: lab1/gitops-app/overlays/dev
+    path: lab1/example-app/overlays/prd
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: HEAD

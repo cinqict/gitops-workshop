@@ -2,4 +2,4 @@ resources:
 - ../../base
 patches:
   - path: pod-patch.yaml
-  - path: pod-svc.yaml
+  - path: svc-patch.yaml
