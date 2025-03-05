@@ -34,5 +34,5 @@
 If you are stuck, ask for help or check the solution:
 <details>
    <summary><b>Solution</b></summary>
-        <a href="https://github.com/cinqict/gitops-workshop/tree/lab2-solution">Check service.yaml</a>
+        <a href="https://github.com/cinqict/gitops-workshop/tree/lab2-solution">Check Lab 2 Solution</a>
 </details>

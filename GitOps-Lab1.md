@@ -25,5 +25,5 @@
 If you are stuck, ask for help or check the solution:
 <details>
    <summary><b>Solution</b></summary>
-        <a href="https://github.com/cinqict/gitops-workshop/blob/lab1-solution">Check service.yaml</a>
+        <a href="https://github.com/cinqict/gitops-workshop/blob/lab1-solution">Check Lab 1 Solution</a>
 </details>
