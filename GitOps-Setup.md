@@ -11,15 +11,15 @@
   - Request access to the Azure AD 
   - Request Contributor access to the GitHub Repo
 
-- Clone this repo
+- Clone this repo and create your branch
   - git clone https://github.com/cinqict/gitops-workshop.git
+  - git switch -c gitops-<yourname>
 
 ## Links
 - Workshop Repo (https://github.com/cinqict/gitops-workshop)
 - GitOps Image (https://hub.docker.com/repository/docker/bahqiplor/cinq-gitops-workshop/general)
 
 ## Git commands
-- git branch gitops-yourname
 - git commit -m "Example Comment"
 - git push --set-upstream origin gitops-yourname
 
