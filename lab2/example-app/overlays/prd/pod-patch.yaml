@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: example-prd
+  name: example
   labels:
     app: example-app-prd
 spec:
   containers:
-  - name: example-app-prd
+  - name: example-app
     image: bahqiplor/cinq-gitops-workshop:latest
     ports:
     - containerPort: 5000
