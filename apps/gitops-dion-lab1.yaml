@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-dion
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/cinqict/gitops-workshop
+    targetRevision: lasttest
+    path: lab1/gitops-dion
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: lab1

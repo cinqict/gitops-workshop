@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gitops-dion-app
+spec:
+  containers:
+  - name: gitops-dion-app
+    image: bahqiplor/cinq-gitops-workshop:latest
+    ports:
+    - containerPort: 5000
