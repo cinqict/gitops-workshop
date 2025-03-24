@@ -25,3 +25,10 @@
 
 ## Kubectl commands
 - kubectl port-forward svc/service-name -n namespace local-port:aks-port
+- kubectl get pods -n namespace
+
+## K8s Docs
+- Pod: (https://kubernetes.io/docs/concepts/workloads/pods/)
+- Service: (https://kubernetes.io/docs/concepts/services-networking/service/)
+- Application: (https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/)
+- Kustomize: (https://www.densify.com/kubernetes-tools/kustomize/)
