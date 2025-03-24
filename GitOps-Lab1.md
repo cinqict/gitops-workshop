@@ -5,6 +5,8 @@
 - Create ArgoCD application manifest
 - Make sure your application identifiers are unique
 - Make sure the Argo application watches the correct subfolder
+- Make sure the Application is deployed in the correct namespace
+- Make sure the target environment is in the correct namespace
 
 **Step Two**
 - Create your app subfolder in the Lab1 folder

@@ -23,6 +23,7 @@
 - Add a second app in the 'apps' folder and adjust them accordingly
 - Both apps should be unique from each other
 - Both apps should poll their environments
+- Both apps should deploy in the correct namespace
 
 **Step Six**
 - Push your branch and changes to the repository
