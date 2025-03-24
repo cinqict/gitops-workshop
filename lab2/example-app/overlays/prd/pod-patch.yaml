@@ -1,9 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: example-app-prd
-selector:
-  matchLabels:
+  name: example-prd
+  labels:
     app: example-app-prd
 spec:
   containers:
