@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: lab1/example-app/overlays/dev
+    path: lab2/example-app/overlays/dev
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: HEAD
