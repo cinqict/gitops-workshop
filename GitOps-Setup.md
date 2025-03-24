@@ -7,13 +7,20 @@
 - Kubectl (https://kubernetes.io/docs/tasks/tools/)
 
 ## Setup
-- Contact dion.simon@cinqict.nl to:
-  - Request access to the Azure AD 
-  - Request Contributor access to the GitHub Repo
+- Contact dion.simon@cinqict.nl to request access to the Azure AD
 
 - Clone this repo and create your branch
   - git clone https://github.com/cinqict/gitops-workshop.git
   - git switch -c gitops-<yourname>
+
+- Login onto Azure via Azure CLI:
+  - az login --use-device-code
+
+- Update Kubeconfig:
+  - az aks get-credentials --resource-group rg-dionsimon-devops --name gitops-aks
+
+- Make Argo available in the browser:
+  - kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 ## Links
 - Workshop Repo (https://github.com/cinqict/gitops-workshop)
