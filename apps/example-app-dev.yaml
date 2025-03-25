@@ -14,3 +14,9 @@ spec:
     path: lab3/example-app/overlays/dev
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: lab3-solution
+  syncPolicy:
+    syncOptions:
+      - PruneLast=true
+    automated:
+      prune: true
+      selfHeal: true
