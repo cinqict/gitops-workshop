@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
     name: sample-workload-identity-key-vault
-    namespace: argocd
+    namespace: gitops-aks-service-account
     labels:
         azure.workload.identity/use: "true"
 spec:

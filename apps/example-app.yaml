@@ -7,10 +7,10 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
+    namespace: lab3
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: lab3/example-app/ #lab3/example-app/overlays/dev
+    path: lab3/example-app/overlays/dev #lab3/example-app/
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: lab3-solution
