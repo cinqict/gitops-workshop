@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
     name: sample-workload-identity-key-vault
-    namespace: gitops-aks-service-account
+    namespace: lab3
     labels:
         azure.workload.identity/use: "true"
 spec:
