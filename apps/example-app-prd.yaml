@@ -13,4 +13,4 @@ spec:
   source:
     path: lab2/example-app/overlays/prd
     repoURL: https://github.com/cinqict/gitops-workshop.git
-    targetRevision: HEAD
+    targetRevision: lab2-solution
