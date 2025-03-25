@@ -1,4 +1,12 @@
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    azure.workload.identity/client-id: 3a0339d3-6fe6-4761-bdac-b0ace3e0b7f5
+  name: gitops-aks-service-account
+  namespace: argocd
+---
+apiVersion: v1
 kind: Namespace
 metadata:
   name: lab1
