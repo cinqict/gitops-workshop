@@ -5,10 +5,6 @@ metadata:
   labels:
     app: example-app
 spec:
-  volumes:
-  - name: secret-volume
-    secret:
-      secretName: keyvault-secret
   containers:
   - name: example-app
     image: bahqiplor/cinq-gitops-workshop:latest
@@ -17,9 +13,11 @@ spec:
     env:
     - name: OUTPUT
       value: "This is the Development environment"
-    volumeMounts:
-    - name: secret-volume
-      mountPath: "/mnt"
+    - name: LAB3_OUTPUT
+      valueFrom:
+        secretKeyRef:
+          name: keyvault-secret
+          key: secret
 ##apiVersion: v1
 ##kind: Pod
 ##metadata:
