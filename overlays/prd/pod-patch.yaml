@@ -13,3 +13,8 @@ spec:
     env:
       - name: OUTPUT
         value: "This is the Production environment"
+      - name: LAB3_OUTPUT
+        valueFrom:
+          secretKeyRef:
+            name: example-secret
+            key: secret
