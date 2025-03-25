@@ -4,7 +4,9 @@ metadata:
   name: example
   labels:
     app: example-app
+    azure.workload.identity/use: "true"
 spec:
+  serviceAccountName: gitops-aks-service-account
   containers:
   - name: example-app
     image: bahqiplor/cinq-gitops-workshop:latest
