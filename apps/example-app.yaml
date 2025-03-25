@@ -13,4 +13,4 @@ spec:
   source:
     path: lab3/example-app/overlays/dev
     repoURL: https://github.com/cinqict/gitops-workshop.git
-    targetRevision: HEAD
+    targetRevision: lab3-solution
