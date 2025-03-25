@@ -6,3 +6,4 @@ resources:
 patches:
 - path: pod-patch.yaml
 - path: svc-patch.yaml
+- path: secret-patch.yaml
