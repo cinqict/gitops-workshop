@@ -9,8 +9,8 @@ spec:
     ports:
     - containerPort: 5000
     env:
-      - name: OUTPUT
-        value: "This is the Development environment"
+    - name: OUTPUT
+      value: "This is the Development environment"
 #apiVersion: v1
 #kind: Pod
 #metadata:
