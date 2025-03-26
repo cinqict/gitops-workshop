@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: roy-app-lab2-dev
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: lab2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: lab2/roy-app-lab2/overlays/dev
+    repoURL: https://github.com/cinqict/gitops-workshop.git
+    targetRevision: HEAD

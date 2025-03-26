@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: roy-lab2
+  labels:
+    app: roy-app-lab2-prd
+spec:
+  containers:
+    - name: roy-app-lab2
+      image: bahqiplor/cinq-gitops-workshop:latest
+      ports:
+        - containerPort: 5000
+      env:
+        - name: OUTPUT
+          value: "Prd environment"

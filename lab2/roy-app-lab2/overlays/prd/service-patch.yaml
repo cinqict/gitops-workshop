@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: roy-lab2-svc-prd
+spec:
+  ports:
+    - port: 8002
+      targetPort: 5000
+  selector:
+    app: roy-app-lab2-prd
