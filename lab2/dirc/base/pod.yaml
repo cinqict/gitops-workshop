@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dirc-pod
+  labels: 
+    app: dirc-app
+spec:
+  containers:
+  - name: hostname
+    image: dirc/hostname
+    ports:
+    - containerPort: 80

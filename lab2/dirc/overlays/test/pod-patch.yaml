@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dirc-pod
+spec:
+  containers:
+  - name: hostname
+    image: bahqiplor/cinq-gitops-workshop
+    env:
+    - name: OUTPUT
+      value: FOOBAR
