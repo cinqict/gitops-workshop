@@ -1,6 +1,6 @@
 # GitOps Labs
 
-## Lab 2
+## Lab 3
 **Step One**
 - Go to the gitops-keyvault in the Azure Portal
 - Create two secrets with unique names
