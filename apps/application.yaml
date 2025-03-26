@@ -8,6 +8,7 @@ spec:
   source:
     path: lab1/app-jaapspiering
     repoURL: https://github.com/cinqict/gitops-workshop.git
+    targetRevision: HEAD
   destination:
     namespace: lab1
     server: https://kubernetes.default.svc

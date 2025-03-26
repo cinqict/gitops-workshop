@@ -4,7 +4,7 @@ metadata:
   name: jaapspiering-lab1-service
 spec:
   ports:
-  - port: 5000
-    protocol: TCP
+    - port: 5000
+      protocol: TCP
   selector:
     app: jaapspiering-lab1
