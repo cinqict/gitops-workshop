@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/cinqict/gitops-workshop'
     targetRevision: HEAD
-    path: lab2/dirc
+    path: lab2/dirc/overlays/test
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: lab2
