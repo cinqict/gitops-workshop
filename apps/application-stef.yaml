@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: appofstef
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: lab1
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: lab1/appofstef/
+    repoURL: https://github.com/cinqict/gitops-workshop.git
+    targetRevision: HEAD
