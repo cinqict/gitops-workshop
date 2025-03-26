@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: roy-lab2
+  labels:
+    app: roy-app-lab2
+spec:
+  containers:
+    - name: roy-app-lab2
+      image: bahqiplor/cinq-gitops-workshop:latest
+      ports:
+        - containerPort: 5000
