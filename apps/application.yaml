@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ehab-application
+  namespace: argocd
+spec:
+  project: lab1
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 0.1.0
+    chart: hello-world
+    helm:
+      values: |
+        service:
+          type: ClusterIP
+        image:
+          tag: latest
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: lab1
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  retry:
+    limit: 5
+    backoff:
+      duration: 5s
+      factor: 2
+      maxDuration: 3m 
