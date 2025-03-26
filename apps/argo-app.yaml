@@ -4,15 +4,11 @@ metadata:
   name: dirc-app
   namespace: argocd
 spec:
-  project: dirc
+  project: default
   source:
     repoURL: 'https://github.com/cinqict/gitops-workshop'
-    targetRevision: gitops-dirc
-    path: lab1
+    targetRevision: HEAD
+    path: lab1/dirc
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: lab1
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
