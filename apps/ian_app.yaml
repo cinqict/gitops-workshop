@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ian-rulez-app
-  namespace: lab1
+  namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
