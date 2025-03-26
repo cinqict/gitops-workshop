@@ -6,7 +6,7 @@
 - Create a 'base' subfolder for the existing manifests
 
 **Step Two**
-- Create an 'overlays' subfolder. 
+- Create an 'overlays' subfolder.
 - Create within this subfolder two other subfolders, named after two different environments
 - In each overlay folder should be a patch for both the pod and service manifests
 
