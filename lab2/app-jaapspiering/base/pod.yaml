@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jaapspiering-lab2-pod
+  labels:
+    app: jaapspiering-lab2
+spec:
+  automountServiceAccountToken: false
+  containers:
+    - name: jaapspiering-container
+      image: bahqiplor/cinq-gitops-workshop:latest
+      ports:
+        - containerPort: 5000

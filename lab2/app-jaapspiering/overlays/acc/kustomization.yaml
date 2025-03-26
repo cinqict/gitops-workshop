@@ -1,0 +1,22 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+nameSuffix: -acc
+resources:
+  - ../../base
+patches:
+  - target:
+      name: jaapspiering-lab2-pod
+      kind: Pod
+    patch: |-
+      - op: add
+        path: "/spec/containers/0/env/-"
+        value: 
+          name: OUTPUT
+          value: "Acceptance"
+  - target:
+      name: jaapspiering-lab2-service
+      kind: Service
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/port
+        value: 5001
