@@ -19,6 +19,12 @@
 - Update Kubeconfig:
   - az aks get-credentials --resource-group rg-dionsimon-devops --name gitops-aks
 
+docker run -it -v $HOME/.azure:/root/.azure mcr.microsoft.com/azure-cli az login --use-device-code
+
+
+docker run --rm -v $HOME/.azure:/root/.azure -v $HOME/.kube:/root/.kube mcr.microsoft.com/azure-cli az aks get-credentials --resource-group rg-dionsimon-devops --name gitops-aks
+
+
 ## Links
 - Workshop Repo (https://github.com/cinqict/gitops-workshop)
 - GitOps Image (https://hub.docker.com/repository/docker/bahqiplor/cinq-gitops-workshop/general)
