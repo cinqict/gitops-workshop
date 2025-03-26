@@ -1,0 +1,35 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-vilant-lab2-alpha
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: lab2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: lab2/app-vilant-lab2/overlay/alpha
+    repoURL: https://github.com/cinqict/gitops-workshop.git
+    targetRevision: HEAD
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-vilant-lab2-prod
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: lab2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: lab2/app-vilant-lab2/overlay/prod
+    repoURL: https://github.com/cinqict/gitops-workshop.git
+    targetRevision: HEAD
