@@ -8,7 +8,9 @@ metadata:
 spec:
   destination:
     namespace: lab1
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: lab1/hello-app
+    targetRevision: HEAD
     repoURL: https://github.com/cinqict/gitops-workshop.git
