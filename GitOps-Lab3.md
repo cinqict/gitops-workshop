@@ -24,8 +24,7 @@
 
 **Step Six**
 - Push your branch and changes to the repository
-- Create a Pull Request towards the main branch
-- Let your peers review
+- Create a Pull Request and merge to the main branch
 - Validate your app in ArgoCD
 - Check your webapps in your browser
 

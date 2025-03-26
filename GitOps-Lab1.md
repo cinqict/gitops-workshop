@@ -19,7 +19,7 @@
 
 **Step Four**
 - Push your branch and changes to the repository
-- Create a Pull Request towards the main branch
+- Create a Pull Request and merge to the main branch
 - Let your peers review
 - Validate your app in ArgoCD
 - Check your webapp via your browser
