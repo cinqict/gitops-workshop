@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: lab1/appofstef/
+    path: lab1/app-stef/
     repoURL: https://github.com/cinqict/gitops-workshop.git
     targetRevision: HEAD
