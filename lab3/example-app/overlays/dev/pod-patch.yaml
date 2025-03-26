@@ -16,5 +16,5 @@ spec:
       - name: LAB3_OUTPUT
         valueFrom:
           secretKeyRef:
-            name: example-secret-lab3-dev
+            name: example-secret-lab3
             key: secret
