@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: example-svc-lab3
+  name: example-svc
 spec:
   ports:
   - port: 8000
     targetPort: 5000
   selector:
-    app: example-app-prd
+    app: example-app
