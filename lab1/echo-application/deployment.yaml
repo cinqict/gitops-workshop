@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo-service-deployment
+  labels:
+    app: echo-service
+  namespace: lab1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echo-service
+  template:
+    metadata:
+      labels:
+        app: echo-service
+    spec:
+      containers:
+      - name: echo-service
+        image: ealen/echo-server:0.9.2
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: '1'
+            memory: 128M
+          limits:
+            cpu: '1.5'
+            memory: 256M
