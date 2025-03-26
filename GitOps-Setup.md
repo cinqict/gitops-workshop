@@ -36,3 +36,4 @@
 - Service: (https://kubernetes.io/docs/concepts/services-networking/service/)
 - Application: (https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/)
 - Kustomize: (https://www.densify.com/kubernetes-tools/kustomize/)
+- Argocd Vault plugin: (https://argocd-vault-plugin.readthedocs.io/en/stable/)
