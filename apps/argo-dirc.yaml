@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dirc-app2
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/cinqict/gitops-workshop'
+    targetRevision: HEAD
+    path: lab2/dirc/overlays/test
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: lab2
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
