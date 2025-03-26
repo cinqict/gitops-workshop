@@ -20,7 +20,7 @@
   - az aks get-credentials --resource-group rg-dionsimon-devops --name gitops-aks
 
 ## Links
-- Workshop Repo (https://github.com/cinqict/gitops-wokrkshop)
+- Workshop Repo (https://github.com/cinqict/gitops-workshop)
 - GitOps Image (https://hub.docker.com/repository/docker/bahqiplor/cinq-gitops-workshop/general)
 
 ## Git commands
