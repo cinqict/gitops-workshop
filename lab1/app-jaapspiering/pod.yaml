@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: jaapspiering-lab1-deployment
+  labels:
+    app: jaapspiering-lab1
+spec:
+  containers:
+    - name: nginx
+      image: bahqiplor/cinq-gitops-workshop:latest
+      ports:
+        - containerPort: 5000
+      resources:
+      limits:
+        cpu: 1
+      requests:
+        cpu: 0.5
