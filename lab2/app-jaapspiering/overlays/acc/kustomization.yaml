@@ -18,5 +18,5 @@ patches:
       kind: Service
     patch: |-
       - op: replace
-        path "/spec/ports/0/port"|
-        value: 5002
+        path: /spec/ports/0/port
+        value: 5001

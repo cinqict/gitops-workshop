@@ -13,3 +13,10 @@ patches:
         valiue: 
           name: OUTPUT
           value: "Test"
+  - target:
+      name: jaapspiering-lab2-service
+      kind: Service
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/port
+        value: 5001

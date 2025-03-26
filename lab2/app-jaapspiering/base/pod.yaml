@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jaapspiering-lab1-pod
+  name: jaapspiering-lab2-pod
   labels:
-    app: jaapspiering-lab1
+    app: jaapspiering-lab2
 spec:
+  automountServiceAccountToken: false
   containers:
     - name: jaapspiering-container
       image: bahqiplor/cinq-gitops-workshop:latest
