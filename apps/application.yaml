@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: workshop-app-jaapspiering
+  namespace: argocd
+spec:
+  project: default
+  source:
+    path: lab1/app-jaapspiering
+    repoURL: https://github.com/cinqict/gitops-workshop.git
+  destination:
+    namespace: lab1
+    server: https://kubernetes.default.svc
