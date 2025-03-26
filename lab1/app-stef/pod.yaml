@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-stef-nginx
+  labels:
+    app: pod-stef-nginx
+spec:
+  containers:
+  - name: pod-stef-nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
