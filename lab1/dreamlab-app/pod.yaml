@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: dreamlab-app
-      image: node:18-alpine3.18
+      image: bahqiplor/cinq-gitops-workshop:latest
       ports:
         - containerPort: 5000
