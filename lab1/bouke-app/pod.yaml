@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bouke
+  labels:
+    app: bouke-app
+spec:
+  containers:
+    - name: bouke-app
+      image: ghcr.io/storax/kubedoom:latest
+      ports:
+        - containerPort: 5000
