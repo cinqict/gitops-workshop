@@ -10,5 +10,5 @@ spec:
     namespace: lab1
   project: default
   source:
-    path: lab1
+    path: lab1/hello-app
     repoURL: https://github.com/cinqict/gitops-workshop.git
