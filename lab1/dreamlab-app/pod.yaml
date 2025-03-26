@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dreamlab-pod
+  labels:
+    app: dreamlab-app
+spec:
+  containers:
+    - name: dreamlab-app
+      image: node:18-alpine3.18
+      ports:
+        - containerPort: 5000
