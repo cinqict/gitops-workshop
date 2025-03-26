@@ -19,9 +19,6 @@
 - Update Kubeconfig:
   - az aks get-credentials --resource-group rg-dionsimon-devops --name gitops-aks
 
-- Make Argo available in the browser:
-  - kubectl port-forward svc/argocd-server -n argocd 8080:443
-
 ## Links
 - Workshop Repo (https://github.com/cinqict/gitops-workshop)
 - GitOps Image (https://hub.docker.com/repository/docker/bahqiplor/cinq-gitops-workshop/general)
